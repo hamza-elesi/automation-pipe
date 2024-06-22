@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/hamza-elesi/automation-pipe.git'
+                git branch: 'master', url: 'https://github.com/hamza-elesi/automation-pipe.git'
             }
         }
         stage('Build') {
